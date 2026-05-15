@@ -1,6 +1,6 @@
 from google import genai
 
-client = genai.Client(api_key="AIzaSyAJ5Bkq5SDDEN4z5CIkglZ1YgY7QJ6vCpY")
+client = genai.Client(api_key="Your API Key")
 
 print("=" * 40)
 print("   My First AI Chat! 🤖")
