@@ -1,0 +1,14 @@
+Agentic AI is a form of artificial intelligence 
+that can autonomously plan and execute tasks.
+
+LangChain is a framework for building AI applications.
+It provides tools for chains, agents, and memory.
+
+RAG stands for Retrieval Augmented Generation.
+It combines document retrieval with AI generation.
+
+CrewAI is a multi-agent framework.
+It allows multiple AI agents to work together.
+
+Vector databases store embeddings for similarity search.
+FAISS and Chroma are popular vector databases.
