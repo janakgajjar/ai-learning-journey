@@ -1,4 +1,4 @@
-streamlit
+gradio
 langchain
 langchain-google-genai
 langchain-community
@@ -7,3 +7,4 @@ faiss-cpu
 pypdf
 python-dotenv
 google-genai
+pymupdf
