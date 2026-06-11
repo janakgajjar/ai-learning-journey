@@ -6,10 +6,8 @@ load_dotenv(dotenv_path="../.env")
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 print("=" * 50)
-print("   Lab 4 — CoT + ReAct Experiments")
-print("=" * 50)
 
-print("\nEXPERIMENT 1: WITHOUT Chain-of-Thought")
+print("\n1: WITHOUT Chain-of-Thought")
 print("-" * 50)
 
 without_cot = "A train travels 120km in 2 hours. How long to travel 450km?"
@@ -21,7 +19,7 @@ response1 = client.models.generate_content(
 print(f"Question: {without_cot}")
 print(f"Answer: {response1.text.strip()[:200]}")
 
-print("\nEXPERIMENT 1: WITH Chain-of-Thought")
+print("\n1: WITH Chain-of-Thought")
 print("-" * 50)
 
 with_cot = """A train travels 120km in 2 hours. 
@@ -35,7 +33,7 @@ response2 = client.models.generate_content(
 print(f"Question: {with_cot}")
 print(f"Answer: {response2.text.strip()[:400]}")
 
-print("\nEXPERIMENT 2: Few-Shot CoT")
+print("\n 2: Few-Shot CoT")
 print("-" * 50)
 
 few_shot_cot = """Solve math problems step by step.
@@ -62,7 +60,7 @@ response3 = client.models.generate_content(
 )
 print(f"Answer: {response3.text.strip()[:400]}")
 
-print("\nEXPERIMENT 3: ReAct Pattern Simulation")
+print("\n 3: ReAct Pattern Simulation")
 print("-" * 50)
 
 react_prompt = """You are an AI agent that uses ReAct pattern.
@@ -83,7 +81,7 @@ response4 = client.models.generate_content(
 )
 print(f"ReAct Response:\n{response4.text.strip()[:500]}")
 
-print("\n🟣 EXPERIMENT 4: Self-Reflection")
+print("\n4: Self-Reflection")
 print("-" * 50)
 
 # Step 1: Get initial answer

@@ -10,7 +10,6 @@ conversation_history = []
 
 print("=" * 40)
 print("   Multi-Turn AI Chat!")
-print("   AI previous messages યાદ રાખે!")
 print("=" * 40)
 
 while True:

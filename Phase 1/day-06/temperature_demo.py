@@ -12,7 +12,7 @@ print("   Temperature Demo!")
 print("=" * 40)
 
 # Low Temperature = Predictable
-print("\n🥶 Low Temperature (0.1) — Predictable:")
+print("\nLow Temperature (0.1) — Predictable:")
 response = client.models.generate_content(
     model="gemini-2.5-flash-lite",
     contents=question,
@@ -21,13 +21,10 @@ response = client.models.generate_content(
 print(response.text)
 
 # High Temperature = Creative
-print("\n🔥 High Temperature (1.5) — Creative:")
+print("\nHigh Temperature (1.5) — Creative:")
 response = client.models.generate_content(
     model="gemini-2.5-flash-lite",
     contents=question,
     config={"temperature": 1.5}
 )
 print(response.text)
-
-print("\n" + "=" * 40)
-print("Notice the difference? 🤔")

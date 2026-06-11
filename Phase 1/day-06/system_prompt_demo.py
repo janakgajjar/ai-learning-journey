@@ -13,7 +13,7 @@ Keep answers short and clear.
 Always end with an encouraging message."""
 
 print("-" * 20)
-print(" AI tutor - System prompt demo ")
+print(" AI tutor - System prompt")
 print("-" * 20)
 
 while True:

@@ -9,8 +9,7 @@ print("-" * 20)
 print(" Agent Memory ")
 print("-" * 20)
 
-print("\n Demo 1: Without Memory")
-print("AI dont remeber previous message")
+print("\n1: Without Memory")
 print("-" * 10)
 
 questions = [
@@ -28,7 +27,7 @@ for q in questions:
     print(f"AI : {response.text.strip()[:100]}")
     print()
 
-print("\n Demo 2: Short term Memory")
+print("\n 2: Short term Memory")
 print("AI conversation history")
 print("-" * 10)
 
@@ -57,7 +56,7 @@ for message in conversation:
     print(f"AI: {ai_reply[:100]}")
     print()
 
-print("\n Demo 3: Long term Memory")
+print("\n3: Long term Memory")
 print("Data stored in file - Available in next session")
 print("-" * 10)
 
