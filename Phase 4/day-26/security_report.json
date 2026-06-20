@@ -1,0 +1,36 @@
+{
+  "security_score": "100%",
+  "grade": "A- Well Protecded",
+  "protections": {
+    "System Prompt": {
+      "status": "Active",
+      "type": "prevetion",
+      "layer": "During LLM call"
+    },
+    "Input Keyword Filter": {
+      "status": "Active",
+      "type": "Prevention",
+      "layer": "Before LLM call"
+    },
+    "PII Detection": {
+      "status": "Active",
+      "type": "Privacy",
+      "layer": "Input + Output"
+    },
+    "Injection Detection": {
+      "status": "Active",
+      "type": "Security",
+      "layer": "Before LLM call"
+    },
+    "Output Filtering": {
+      "status": "Active",
+      "type": "Safety",
+      "layer": "After LLM call"
+    },
+    "Rate Limiting": {
+      "status": "Basic",
+      "type": "Performance",
+      "layer": "All layers"
+    }
+  }
+}
