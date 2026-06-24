@@ -1,0 +1,19 @@
+{
+  "comparison": [
+    {
+      "question": "What is Agentic AI?",
+      "finetuned_length": 667,
+      "rag_length": 143
+    },
+    {
+      "question": "How does RAG work?",
+      "finetuned_length": 776,
+      "rag_length": 114
+    }
+  ],
+  "lora_demo": {
+    "base_length": 5244,
+    "adapter1_length": 3580,
+    "adapter2_length": 6120
+  }
+}
