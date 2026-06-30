@@ -1,0 +1,66 @@
+{
+  "student": "Janak Gajjar",
+  "program": "MCA Semester 3",
+  "subject": "Agentic AI Bridge Course",
+  "project": "Research Assistant Agent",
+  "date": "2026-06-30T11:44:01.607182",
+  "requirements_met": {
+    "react_loop": {
+      "status": " Implemented",
+      "where": "run_react_agent() in Part 1",
+      "description": "Thought \u2192 Action \u2192 Observe \u2192 Repeat"
+    },
+    "tools_used": {
+      "status": " 3 Tools",
+      "tools": [
+        "research_tool = Gathers information",
+        "summary_tool = Creates summary",
+        "question_generator_tool = Makes quiz"
+      ]
+    },
+    "memory": {
+      "status": "Short-term Memory",
+      "type": "AgentMemory class",
+      "storage": "In-memory list + JSON file"
+    },
+    "error_handling": {
+      "status": " Implemented",
+      "method": "try/except + 3 retry attempts",
+      "covers": "Rate limit, Server error, General"
+    },
+    "prompt_engineering": {
+      "status": " Applied",
+      "techniques": [
+        "Structured output format",
+        "Role-based prompts",
+        "Context injection",
+        "Output constraints"
+      ]
+    },
+    "evaluation_metrics": {
+      "status": " 4 Metrics",
+      "metrics": [
+        "Completeness score",
+        "Length score",
+        "Structure score",
+        "AI quality score"
+      ]
+    }
+  },
+  "evaluation": {
+    "completeness_score": 6.2,
+    "length_score": 10.0,
+    "structure_score": 6.0,
+    "ai_quality_score": 9.0,
+    "overall_score": 7.8,
+    "grade": "B - Good ",
+    "word_count": 643
+  },
+  "tech_stack": {
+    "framework": "LangChain",
+    "llm": "Google Gemini 2.5 Flash Lite",
+    "pattern": "ReAct",
+    "memory": "Custom AgentMemory",
+    "deployment": "Local + Hugging Face"
+  }
+}
